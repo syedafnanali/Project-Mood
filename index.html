@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <div class="rock">
+                <h1 style="color:azure;"><i class="fas fa-braille"></i> M∞D</h1>
+                <p>Start your day the right way</p>
+            </div>
+        </div>
+        <div class="weatherDisplay">
+        </div>
+    </div><br>
+    <div id="weather" class="card " style="background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));">
+        <div class="card-header" style="text-shadow: 3px 3px 3px rgba(247, 2, 2, 0.431);"><i class="fas fa-braille" id="logosmall"></i>
+            M∞D</div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">
+                    <h4>Enter your city or zipcode to get weather</h4>
+                </label>
+                <input type="email" class="form-control" id="city" placeholder="City or zipcode">
+                <button id="submitBtn" type="button" class="btn btn-secondary">Submit</button>
+                <div class="dispCity"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mood" class="card">
+        <div class="card-header" style="border-bottom:1px solid rgba(92, 87, 87, 0.246); text-shadow: 3px 3px 3px rgba(247, 2, 2, 0.431);"><strong>
+                <i class="fas fa-braille" id="logosmall"></i> M∞D</strong></div>
+        <div class="card-body text-dark">
+            <h4 class="card-title">How are you feeling today?</h4>
+            <div class="btn-group">
+                <button id="dropbtn" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+                    ">
+                    Select mood
+                </button>
+                <div class="dropdown-menu">
+                    <p class="dropdown-item">Happy</p>
+                    <p class="dropdown-item" href="#">Sad</p>
+                    <p class="dropdown-item" href="#">Excited</p>
+                    <p class="dropdown-item" href="#">Angry</p>
+                    <p class="dropdown-item" href="#">Calm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" container vids">
+
+    </div>
+    <div class="footer">
+        Copyright ©<br>
+        Team RED
+    </div>
+    <script src="assets/javascript/weather_api_functions.js"></script>
+    <script src="assets/javascript/youtube_api_functions.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+</body>
+
+</html>

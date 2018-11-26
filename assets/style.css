@@ -1,0 +1,208 @@
+body{
+    /* background: url(https://wallpaper-house.com/data/out/6/wallpaper2you_105570.gif) no-repeat center center; */
+    background: rgba(141, 130, 130, 0.74);
+    background-size: cover;
+    overflow: scroll;
+    height: 1400px;
+    overflow-x: visible;
+    overflow-y: visible;
+    overflow: visible;
+}  
+.weatherDisplay{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 5%;
+    top: 15px;
+}
+
+#iconImg{
+    color: rgb(3, 149, 207);
+    font-size: 20px;
+    padding: top 40px;
+}
+
+#tempDisp{
+    color:azure;
+}
+
+#city{
+    color: rgb(207, 201, 201);
+}
+
+.jumbotron{
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    height: 200px;
+    box-shadow:15px 15px 15px rgba(0, 0, 0, 0.26);
+    border-bottom: 1px solid rgb(94, 160, 160);
+    color: white;
+}
+
+#logosmall{
+    font-size: 18px;
+}
+
+#mood{
+    margin:auto;
+    top: 7%;
+    width: 500px;    
+    height:200px;
+    font-size: 30px;
+    display: none;
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    border-radius: 6px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.26);
+    border: 1px solid rgb(94, 160, 160);
+    color: white;
+}
+
+#mood h4{
+    color: rgba(212, 202, 202, 0.767);
+}
+
+.card header{
+    border: 2px solid white ;
+}
+
+#submitBtn{
+    margin-top:20px;
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    color: azure;
+}
+
+.dropdown-item{ 
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    color: azure;
+}
+
+.dropdown-menu{ 
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    color: azure;
+}
+
+#weather{
+    margin:auto;
+    top: 7%;
+    width: 500px;
+    height:auto;
+    font-size: 30px;
+    display: none;
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.26);
+    color: white;
+}
+
+.btn{
+    color: white;
+}
+
+.rock{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    border-bottom: 5px solid rgb(24, 23, 23);
+    overflow: hidden;
+    animation: reveal 2s linear forwards;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+}
+
+.rock h1{
+    margin:0;
+    padding: 0;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 60px;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(247, 2, 2, 0.431);
+    text-transform: uppercase;
+}
+
+.rock p{
+    text-shadow: 2px 2px 2px rgba(247, 2, 2, 0.431);
+    color: white;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.videoContainer{
+    width: 400px;
+    color: rgba(235, 224, 224, 0.513);
+    border: 1px solid rgba(212, 195, 195, 0.596);
+    clear: both;
+    margin: auto;
+    margin: 20px;
+    margin-left: 60px;
+    margin-top: 80px;
+    height: 400px;
+    display:inline-flex;
+    text-align: center;
+    display: inline-block;
+    box-shadow:10px 10px 10px rgba(116, 101, 101, 0.26);
+    overflow: hidden;    
+    opacity: 1.0;
+}
+
+@keyframes reveal{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    30%{
+        width: 1000px;
+        height: 0px;
+    }
+    60%{
+        width: 1000px;
+        height: 80px;
+    }
+    80%{
+        width: 1000px;
+        height: 100px;
+    }
+    100%{
+        width: 1000px;
+        height: 100px;
+        border-bottom: 0px rgb(134, 113, 113);
+    }
+}
+
+.vids{    
+    /* width: 1500px; */
+    height: auto;
+    margin-bottom:auto;
+    background:linear-gradient( rgb(77, 73, 73), rgb(0, 0, 0));
+    border: 2px solid rgb(94, 160, 160);
+    margin: auto;
+    display: none;
+    overflow: hidden;
+    box-shadow:10px 10px 10px rgba(5, 5, 5, 0.26);
+}
+
+.footer{
+    background:linear-gradient(rgb(0, 0, 0), rgb(77, 73, 73));
+    color: rgb(243, 242, 240);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    padding-top: 15px;
+    margin-bottom: 0;  
+    border-top: 2px solid rgb(94, 160, 160);
+}
+
+.videoContainer:hover{
+    background:black;
+    width: 410px;
+    height: 410px;
+    opacity: 1.0;
+}
+
+
