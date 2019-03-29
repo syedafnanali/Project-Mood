@@ -1,5 +1,5 @@
 var queryurlweather = "https://api.openweathermap.org/data/2.5/weather?q="
-var apiKeyweather = "6b15a92443bae40fa06e6fa73674e76c"
+var apiKeyweather = "########################33333"
 console.log(queryurlweather + "chicago" + "&apikey=" + apiKeyweather)
 
 $('#submitBtn').click(function () {
